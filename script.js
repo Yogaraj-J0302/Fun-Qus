@@ -5,7 +5,7 @@ function createEle(ele,att,value){
 }
 let container=createEle("div","class","container");
 let h1=createEle("h1","class","content");
-h1.innerHTML="Are You Mad..?"
+h1.innerHTML="Unga Tooth Paste la Uppu Iruka..?"
 let br1=document.createElement("br");
 let yes=createEle("input","type","radio");
 yes.setAttribute("id","yes")
