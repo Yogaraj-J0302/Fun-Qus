@@ -5,7 +5,7 @@ function createEle(ele,att,value){
 }
 let container=createEle("div","class","container");
 let h1=createEle("h1","class","content");
-h1.innerHTML="Are You Made..?"
+h1.innerHTML="Are You Mad..?"
 let br1=document.createElement("br");
 let yes=createEle("input","type","radio");
 yes.setAttribute("id","yes")
@@ -46,7 +46,7 @@ function click(){
 function NoFun(){
     let x=document.querySelector("h1");
     x.setAttribute("id","ans");
-    x.innerHTML="Correct-u..! Correct-u..! Correct-u..!";
+    x.innerHTML="Already I Know da..!";
     return x;
 }
 container.append(h1,br1,yes,yesLable,no,noLable,br1,button);
