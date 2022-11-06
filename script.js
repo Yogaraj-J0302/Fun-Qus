@@ -20,13 +20,13 @@ no.setAttribute("name","selection");
 let noLable=createEle("lable","for","no");
 noLable.innerHTML="No"
 let button=createEle("button","type","button");
-button.innerHTML="Click Here";
+button.innerHTML="Answer";
 button.addEventListener("click",click);
-no.addEventListener("change",()=>{
-    if(no.checked) button.style.display="none";
-})
 yes.addEventListener("change",()=>{
-    if(yes.checked) button.style.display=null;
+    if(yes.checked) button.style.display="none";
+})
+no.addEventListener("change",()=>{
+    if(no.checked) button.style.display=null;
 })
 function click(){
     let x=document.getElementsByName("selection");
@@ -35,7 +35,7 @@ function click(){
     for(let i=0; i<x.length; i++){
         if(x[i].checked){
             xValue=x[i].value;
-            if(xValue=="no"){
+            if(xValue=="yes"){
                 button_css.style.display=null;
             } else{
                 NoFun();
