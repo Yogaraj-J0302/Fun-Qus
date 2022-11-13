@@ -36,7 +36,7 @@ function click(){
         if(x[i].checked){
             xValue=x[i].value;
             if(xValue=="yes"){
-                button_css.style.display=null;
+                button_css.setAttribute=("disabled",true);
             } else{
                 NoFun();
             }           
